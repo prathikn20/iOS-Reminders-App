@@ -17,7 +17,7 @@ struct EditSheet: View {
                     .font(.system(size: 25, design: .default))
                     .foregroundColor(selectedColor)
                     .padding()
-                    .background(Color((UIColor.secondarySystemBackground)).opacity(0.2))
+                    .background(Color((UIColor.secondarySystemBackground)).opacity(0.9))
                     .cornerRadius(10)
                     .padding()
                 
@@ -46,5 +46,5 @@ struct EditSheet: View {
     @Previewable @State var title: String = "Title"
     
     EditSheet(title: $title, selectedColor: $selectedColor)
-        .preferredColorScheme(.dark)
+        .preferredColorScheme(.light)
 }

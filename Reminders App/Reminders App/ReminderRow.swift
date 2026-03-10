@@ -20,8 +20,11 @@ struct RemReminderRow: View {
                     .foregroundColor(themeColor)
             }
             .font(.title2)
+            .buttonStyle(.plain)
+            
             TextField("", text: $reminder.title)
                 .foregroundColor(!reminder.isCompleted ? .black : .black.opacity(0.5))
+                .font(.system(size: 20))
         }
     }
 }
