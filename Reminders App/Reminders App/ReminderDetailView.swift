@@ -46,7 +46,7 @@ struct ReminderDetailView: View {
                             Text("Description")
                                 .frame(width: 90, alignment: .leading)
                             
-                            TextField("", text: $reminder.description)
+                            TextField("", text: $reminder.description, axis: .vertical)
                         }
                         .padding(10)
                     }
